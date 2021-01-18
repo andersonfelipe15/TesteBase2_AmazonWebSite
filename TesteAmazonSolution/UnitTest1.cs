@@ -16,12 +16,14 @@ namespace TestAmazon2
     [TestClass]
     public class ClassUnitTest
     {
-        [FindsBy(How = How.XPath, Using = "//*[@id='search']/div[1]/div[2]/div/span[3]/div[2]/div[7]/div/span/div/div/div[2]/h2/a/span")]
+        public IWebElement TxtIphone { get; set; }
+
+     
         public IWebElement iphoneLista { get; set; }
         [FindsBy(How = How.Id, Using = "twotabsearchtextbox")]
-        public IWebElement txtIphone { get; set; }
 
-      
+        [FindsBy(How = How.XPath, Using = "//*[@id='search']/div[1]/div[2]/div/span[3]/div[2]/div[7]/div/span/div/div/div[2]/h2/a/span")]
+
         PageObject pageobject = new PageObject();
 
         [TestMethod]
