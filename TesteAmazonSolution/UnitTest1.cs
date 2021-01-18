@@ -29,6 +29,7 @@ namespace TestAmazon2
         {
             // Abrir navegador
             IWebDriver driver = new ChromeDriver();
+            //IWebDriver driver = new EdgeDriver();
 
             var navigate = driver.Navigate();
 
