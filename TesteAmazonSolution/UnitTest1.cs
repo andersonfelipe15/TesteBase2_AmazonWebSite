@@ -27,10 +27,9 @@ namespace TestAmazon2
         PageObject pageobject = new PageObject();
 
         [TestMethod]
-        public void TestNavegateAmazon()
+        public void TestNavegateAmazonFinish()
         {
             // Abrir navegador
-
             IWebDriver driver = new ChromeDriver();
             //IWebDriver driver = new EdgeDriver();
 
